@@ -1,42 +1,53 @@
 /* Questão 1 */
 section{
-    height: 100vh;
-    width: 90%;
-    border: 15px solid black;
+    height: 200vh;
+    width: 95%;
+    border: 20px solid black;
 }
+
 .A, .B, .D, .E, .G, .I{
     background-color: rgb(211, 209, 209);
     border: 1px dotted grey;  
 }
+
 .C{
     background-color: rgb(255, 255, 255);
     border: 1px dotted grey;
 }
+
 .F, .H{
     background-color: rgb(49, 139, 180);
     border: 1px dotted grey;
 }
+
 .A{
     grid-area: A;
 }
+
 .B{
     grid-area: B;
 }
+
 .C{
     grid-area: C;
 }
+
 .D{
     grid-area: D;
 }
+
 .E{
     grid-area: E;
 }
+
 .F{
     grid-area: F;
 }
+
 .G{
     grid-area: G;
 }
+
 .H{
     grid-area: H;
 }
@@ -93,15 +104,7 @@ section{
         "B F F F"; 
 }
 
-.itemd .container .D{
-    display: none;
-}
-
-.itemd .container .E{
-    display: none;
-}
-
-.itemd .container .G{
+.itemd .container .D, .itemd .container .E, .itemd .container .G{
     display: none;
 }
 
@@ -116,11 +119,7 @@ section{
         "B D D F";
 }
 
-.iteme .container .E{
-    display: none;
-}
-
-.iteme .container .G{
+.iteme .container .E, .iteme .container .G{
     display: none;
 }
 
@@ -175,13 +174,7 @@ section{
     grid-template-columns: repeat(10, 1fr);
 }
 
-.itemh .container .D{
-    display: none;
-}
-.itemh .container .E{
-    display: none;
-}
-.itemh .container .G{
+.itemh .container .D, .itemh .container .E, .itemh .container .G{
     display: none;
 }
 
@@ -259,10 +252,41 @@ section{
     grid-column: 3/8;
 }
 
-.itemi .container .I{
-    grid-row: 7/9;
-    grid-column: 2/3;
+/* 1ª QUESTÃO - ITEM J */
+.itemj .container{
+  display: grid;
+  grid-template-rows: repeat(4, 100px) ;
+  grid-template-columns: 10% 45% 45%;
+  grid-template-areas: 
+        "H C A"
+        "H C B"
+        "H C D"
+        "H C E";
 }
+
+.itemj .container .G, .itemj .container .F{
+  display: none;
+}
+
+/* 1ª QUESTÃO - ITEM K */
+.itemk .container{
+  display: grid;
+  grid-template-rows: repeat(4, 100px) ;
+  grid-template-columns: 5% 30% 65%;
+  grid-template-areas: 
+        "H A C"
+        "H A C"
+        "H B C"
+        "H B C";
+}
+
+.itemk .container .D, .itemk .container .E, .itemk .container .F, .itemk .container .G{
+  display: none;
+}
+
+
+
+
 
 
 
