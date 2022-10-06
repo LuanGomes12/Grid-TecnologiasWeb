@@ -1,0 +1,54 @@
+header{
+  display: grid;
+  grid-template-columns: 40% 15% 15% 15% 15%;
+  background-color: grey;
+  color: white;
+  height: 50px;
+  align-items: center;
+}
+
+#marca, #copyright{
+  margin-left: 50px;
+}
+
+footer{
+  display: grid;
+  background-color: grey;
+  color: white;
+  height: 50px;
+  align-items: center;
+}
+
+#parte1{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+
+.div-parte1{
+  background-color: gray;
+  height: 100px;
+}
+
+#parte2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+
+.parte2-1{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 0.5fr;
+  grid-row-gap: 20px;
+}
+
+.parte2-1 div{
+  background-color: grey;
+}
+
+#parte2-2{
+  display: grid;
+  grid-template-rows: 250px;
+  border: 2px solid grey;
+}
